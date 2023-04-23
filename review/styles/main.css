@@ -92,7 +92,6 @@ img {
     ul {
         display: flex;
         flex-direction: row;
-        align-self: right;
         position: absolute;
         right: 0;
     }
