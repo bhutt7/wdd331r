@@ -1,0 +1,31 @@
+1. Create 4 boxes and center them on the screen both vertically and horizontally.
+2. Add a circle in the top left corner of the first box.
+3. Make the circle move around the perimeter of the containing square clockwise.
+    3.1 Start at the top left corner
+    3.2 Move to the top right corner
+    3.3 Move to the bottom right corner
+    3.4 Move to the bottom left corner
+    3.5 Move back to the top left corner
+    3.6 Repeat
+4. Add a circle in the center of the second box.
+5. Make the circle change to a white square, then rotate, then change back.
+    5.1 Start with border radius 50% and red color
+    5.2 Change border radius to 0, color to white
+    5.3 Rotate 90deg
+    5.4 Change border radius back to 50% and color back to red
+    5.5 Repeat
+6. Add two half-circles in the center of the third box to form a full circle.
+7. Make both halves of the circle move apart horizontally, then come back together.
+    7.1 Start with both halves adjacent to make a circle
+    7.2 Move both halves away from each other
+    7.3 Move both halves back into a circle
+    7.4 Repeat
+8. Add a circle in the center of the fourth box.
+9. Make the circle rapidly grow and shrink twice, then wait, then rapidly grow and shrink once more.
+    9.1 Start with normal size
+    9.2 Scale up the circle then immediately scale it back down
+    9.3 Repeat immediately
+    9.4 Wait until just before the end of animation
+    9.5 Scale up the circle then immediately scale it back down
+    9.6 Repeat immediately
+    9.7 Repeat
