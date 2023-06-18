@@ -73,8 +73,6 @@ h3 {
     line-height: 90px;
 }
 
-
-
 .alert {
     display: grid;
     grid-template-columns: 150px auto;
