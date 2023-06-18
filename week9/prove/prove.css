@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap');
+
+:root {
+    /* set variation axis values */
+    --mono: "MONO" 0; /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+    --casl: "CASL" 0; /* Casual: Linear to Casual */
+    --wght: 450; /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+    --slnt: 0; /* Slant: 0 to -15 degrees, auto cursive at -14 */
+    --CRSV: "CRSV" 0; /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
+
+    --ratio: 1.25;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+}
+
+* {
+    font-weight: var(--wght);
+    font-style: oblique var(--slnt);
+    font-variation-settings: var(--mono), var(--casl), var(--CRSV);
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: Recursive, sans-serif;
+    margin: 40px 40px 40px 100px;
+    max-width: 66ch;
+}
+
+h1, h2 {
+    --wght: 800;
+    margin-bottom: 0;
+    margin-top: var(--s2);
+}
+
+h1 {
+    font-size: var(--s3);
+}
+
+h2 {
+    font-size: var(--s2);
+}
+
+div p {
+    font-size: var(--s-1);
+    --wght: 400;
+    border-left: 1px solid black;
+    padding-left: 15px;
+}
+
+div span {
+    --wght: 800;
+}
+
+h3 {
+    --casl: "CASL" 1;
+    font-size: var(--s3);
+    border: 10px solid grey;
+    border-radius: 50%;
+    width: 90px;
+    margin: 10px;
+    line-height: 90px;
+}
+
+
+
+.alert {
+    display: grid;
+    grid-template-columns: 150px auto;
+    max-height: 150px;
+}
+
+.bold-span {
+    --wght: 800;
+}
+
+.mono-span {
+    --mono: "MONO" 1;
+    --wght: 350;
+    font-size: var(--s-1);
+}
