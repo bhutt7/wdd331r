@@ -46,9 +46,9 @@
   }
   .quote-box__author-image img {
     box-shadow: none;
+    border-radius: 50%;
     height: var(--smallImage);
     width: var(--smallImage);
-    border-radius: 50%;
   }
 }
 body {
